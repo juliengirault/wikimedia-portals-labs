@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Discovery UX Labs</title>
+<!--[if lt IE 7]><meta http-equiv="imagetoolbar" content="no"><![endif]-->
+<meta name="viewport" content="initial-scale=1,user-scalable=yes">
+<style>img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:85%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}input[type=search]:focus{outline-offset:-2px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}.hidden,[hidden]{display:none!important}.pure-img{max-width:100%;height:auto;display:block}</style>
+<style>
+body {
+  padding: 2em;
+  background-color: #cecece;
+  font-size: 14px;
+}
+a {
+  color: #165C91;
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+a:visited {
+    color: #165C91;
+}
+.container {
+  max-width: 50em;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 3em;
+}
+.block {
+  margin: 3em auto;
+  padding: .7em 1em;
+}
+.block.live {
+  border: 1px solid #dedede;
+  background-color: #f0f0f0;
+}
+h3 {
+  margin: 0 auto;
+}
+ul {
+  margin: 1.5em auto 0;
+}
+.logo {
+  width: 128px;
+  height: 149px;
+  background: url(Wikimedia_labs_logo_with_text.svg.png);
+  margin: 0 auto;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo"></div>
+    <div class="block live">
+      <h3>January 13-20 2016: <a href="https://meta.wikimedia.org/wiki/Wikipedia.org_Portal_Improvements#A.2FB_tests" target="_blank">Live A/B/C test</a></h3>
+      <ul>
+        <li><a href="./pab2/">A: Baseline and control group <em>(no way to force "testing only" - so you may get experience "B" or "C")</em></a></li>
+        <li><a href="./pab2/#abtest1"><strong>B: prominent search box</strong></a></li>
+        <li><a href="./pab2/#abtest2"><strong>C: prominent search box + new typeahead</strong></a></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3>January 2016: Prototypes using <a href="https://facebook.github.io/react/" target="_blank">React</a></h3>
+      <ul>
+        <li><a href="./react/">Current version</a></li>
+        <li><a href="./react-top9-cards/"><strong>Trending</strong> Showing top 9 articles (grid)</a></li>
+        <li><a href="./react-top10-fs/"><strong>Trending</strong> Showing top 10 articles (full screen)</a></li>
+        <li><a href="./react-top10-languages/"><strong>Language Detection</strong> Showing top 10 wikis based on navigator languages</a> <a href="./react-top10-languages/#ca,es">(open with Catalan, Spanish)</a></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3>December 2015: Top 10 based on navigator languages</h3>
+      <ul>
+        <li><a href="./languages/">Your navigator languages</a> <a href="./languages-yellow1/">(large highlight)</a> <a href="./languages-yellow2/">(small highlight)</a></li>
+      </ul>
+      <ul>
+        <li><a href="./languages/#lang">Random (picks 2 language links and 1 top10 language)</a> <a href="./languages-yellow1/#lang">(large highlight)</a> <a href="./languages-yellow2/#lang">(small highlight)</a></li>
+      </ul>
+      <ul>
+        <li><a href="./languages/#lang:haw,en">Hawai'i, English</a></li>
+        <li><a href="./languages/#lang:ca,es">Catalan, Spanish</a></li>
+        <li><a href="./languages/#lang:bs,hr,sk">Bosnian, Croatian, Serbian</a></li>
+        <li><a href="./languages/#lang:uk,ru">Ukrainian, Russian</a></li>
+        <li><a href="./languages/#lang:hi,gu">Hindi, Gujarati</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
